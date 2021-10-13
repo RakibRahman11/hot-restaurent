@@ -1,0 +1,28 @@
+#basic-addon1{
+    background-color: rgb(241, 30, 30);
+    color: white;
+    border-radius: 5px;
+}
+.card{
+    border: none;
+}
+.card-img{
+    width: 100%;
+    
+}
+.items-variation{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+.items{
+    margin: 10px 30px;
+    font-weight: bolder;
+}
+.card-details{
+    background-color: white;
+    width: 400px;
+    margin: 20px;
+    
+}

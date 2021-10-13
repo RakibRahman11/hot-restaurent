@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    flex-direction:column;
+}
+.logo{
+    width: 50%;
+    justify-content: flex-start;
+    margin-left: 0px;
+    display: block;
+}
+.navbar-nav{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
