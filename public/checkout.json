@@ -1,0 +1,25 @@
+[
+    {
+        "id": 1,
+        "title": "Fast Delivery",
+        "description": "Highly recommended services",
+        "img": "https://i.ibb.co/j67XPBd/adult-blur-blurred-background-687824.png",
+        "icon": "https://i.ibb.co/W0jkMQd/Group-204.png"
+    },
+    {
+        "id": 2,
+        "title": "A Good Auto Responder",
+        "description": "Highly recommended services",
+        "img": "https://i.ibb.co/345Stc0/chef-cook-food-33614.png",
+        "icon": "https://i.ibb.co/g4Yvrfx/Group-245.png"
+    },
+    {
+        "id": 3,
+        "title": "Home Delivery",
+        "description": "Highly recommended services",
+        "img": "https://i.ibb.co/Jq50Jyj/architecture-building-city-2047397.png",
+        "icon": "https://i.ibb.co/bBpsps9/Group-1133.png"
+    }
+]
+
+

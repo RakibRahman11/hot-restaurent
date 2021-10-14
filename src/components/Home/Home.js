@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css'
 import banner from '../../Images/bannerbackground.png'
+import Checkout from '../Checkout/Checkout';
 
 const Home = () => {
     const [foods, setFoods] = useState([]);
@@ -12,13 +13,13 @@ const Home = () => {
     }, []);
     return (
         <div>
-            <div className="banner mt-5">
-                <div className="card text-white">
+            <div className="mt-5 banner">
+                <div className="text-white card">
                     <img src={banner} className="card-img" alt="..." />
                     <div className="card-img-overlay">
-                        <h1 className="card-title text-dark mt-5">Best food waiting for your belly</h1>
+                        <h1 className="mt-5 card-title text-dark">Best food waiting for your belly</h1>
                         <nav className="navbar navbar-light">
-                            <div className="w-25 mx-auto mt-3">
+                            <div className="mx-auto mt-3 w-25">
                                 <div className="input-group">
                                     <input type="text" className="form-control" placeholder="Search food items" aria-label="Username" />
                                     <span className="input-group-text" id="basic-addon1">Search</span>
@@ -37,7 +38,7 @@ const Home = () => {
                 <div className="container">
                     <div className="row">
                         {
-                            foods.map(food => <div className="card card-details shadow p-3 mb-5 bg-body rounded col-lg-4">
+                            foods.map(food => <div className="p-3 mb-5 rounded shadow card card-details bg-body col-lg-4">
                                 <img src={food.img} className="card-img-top" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{food.title}</h5>
@@ -46,6 +47,7 @@ const Home = () => {
                                 </div>
                             </div>)
                         }
+                        <Checkout></Checkout>
                     </div>
                 </div>
             </div>

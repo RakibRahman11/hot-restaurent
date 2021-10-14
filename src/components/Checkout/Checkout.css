@@ -1,0 +1,9 @@
+.checkout-head{
+    text-align: start;
+    margin-left: 50px;
+}
+.checkout-details{
+    background-color: white;
+    width: 380px;
+    margin: 20px; 
+}
