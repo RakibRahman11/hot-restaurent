@@ -1,16 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './Home.css'
 import banner from '../../Images/bannerbackground.png'
-import Checkout from '../Checkout/Checkout';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
-    const [foods, setFoods] = useState([]);
-    useEffect(() => {
-        fetch('./breakfast.json')
-            .then(response => response.json())
-            .then(data => setFoods(data))
-        console.log();
-    }, []);
     return (
         <div>
             <div className="mt-5 banner">
@@ -29,27 +22,26 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div>
-                <div className="items-variation">
-                    <p className="items">Breakfast</p>
-                    <p className="items">Lunch</p>
-                    <p className="items">Dinner</p>
-                </div>
-                <div className="container">
-                    <div className="row">
-                        {
-                            foods.map(food => <div className="p-3 mb-5 rounded shadow card card-details bg-body col-lg-4">
-                                <img src={food.img} className="card-img-top" alt="..." />
-                                <div className="card-body">
-                                    <h5 className="card-title">{food.title}</h5>
-                                    <p className="card-text">{food.description}</p>
-                                    <p className="btn btn-outline-dark">${food.price}</p>
-                                </div>
-                            </div>)
-                        }
-                        <Checkout></Checkout>
-                    </div>
-                </div>
+            <div className='items-variation'>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <Link className="items nav-link" to='/breakfast'>Breakfast</Link>
+                    </li>
+                    <li class="nav-item">
+                        <Link className="items nav-link" to='/lunch'>Lunch</Link>
+                    </li>
+                    <li class="nav-item">
+                        <Link className="items nav-link" to='/dinner'>Dinner</Link>
+                    </li>
+                </ul>
+                {/* <div className="items-variation">
+                    <ul class="nav justify-content-center">
+                        <Link className="items" to='/breakfast'>Breakfast</Link>
+                        <Link className="items" to='/lunch'>Lunch</Link>
+                        <Link className="items" to='/dinner'>Dinner</Link>
+                    </ul>
+
+                </div> */}
             </div>
         </div>
     );
